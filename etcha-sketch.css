@@ -1,0 +1,72 @@
+:root {
+    --grid-rows:16;
+    --grid-cols: 16;
+    --pen-color: #20D757;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: #20D757;
+    background: url(supermario-etcha-sketch.jpeg);
+    background-size: cover;
+
+}
+
+h1 {
+    margin: 3rem 0rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.header {
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #20D757;
+    background-color: transparent;
+    border: 3px solid #32e0c4;
+    text-decoration-style: wavy;
+    cursor: pointer;
+    width: max-content;
+    transition: 0.25s;
+}
+
+button:hover {
+    border-style: dashed;
+}
+
+.buttons {
+    margin-bottom: 1rem;
+}
+
+.container {
+    display:grid;
+    height: 400px;
+    width: 400px;
+    padding: 50px;
+    margin: auto;
+    gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.pixel {
+    transition: all .07s ease;
+    background-color: #2050D7;
+    opacity: .80;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.draw {
+    background-color: var(--pen-color);
+}
